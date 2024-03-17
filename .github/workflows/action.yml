@@ -6,6 +6,7 @@ on:
       parameter1:
         description: 'First parameter'
         type: string
+        options: [dev,test]      
         default: "abc  "
       parameter2:
         description: 'Second parameter'
