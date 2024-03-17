@@ -20,10 +20,10 @@ jobs:
       param1: ${{inputs.parameter1}}
       param2: ${{inputs.parameter2}}
  # printoutput:
-     # name: Combine Parameters
-     # runs-on: ubuntu-latest 
-     # steps:
-       # - run: echo ' ${{ workflow_call.outputs }}'
+      name: Combine Parameters
+      runs-on: ubuntu-latest 
+      steps:
+        - run: echo ' ${{ jobs.combine.outputs }}'
         
         
     
