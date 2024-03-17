@@ -23,7 +23,7 @@ jobs:
       name: Combine Parameters
       runs-on: ubuntu-latest 
       steps:
-        run: echo ' ${{ on.workflow_call.outputs }}'
+        - run: echo ' ${{ on.workflow_call.outputs }}'
         
         
     
