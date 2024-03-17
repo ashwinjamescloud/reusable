@@ -6,7 +6,10 @@ on:
       parameter1:
         description: 'First parameter'
         type: string
-        options: [dev,test]      
+        options: 
+          - info
+          - warning
+          - debug     
         default: "abc  "
       parameter2:
         description: 'Second parameter'
@@ -23,8 +26,8 @@ jobs:
   printoutput:
       name: Combine Parameters
       runs-on: ubuntu-latest 
-      steps:
-        - run: echo ' ${{ workflow_call.outputs }}'
+     # steps:
+       # - run: echo ' ${{ workflow_call.outputs }}'
         
         
     
