@@ -5,11 +5,7 @@ on:
     inputs:
       parameter1:
         description: 'First parameter'
-        type: string
-        options: 
-          - info
-          - warning
-          - debug     
+        type: string   
         default: "abc  "
       parameter2:
         description: 'Second parameter'
